@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="assets/css/libs/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css?v=1.1.1">
     <title>Вики Грум</title>
 </head>
@@ -214,35 +214,102 @@
 
             <section class="clients">
                 <div class="clients__container container">
-                    <div class="clients__header">
-                        <h2 class="clients__title  section-title">
-                            <img class="section-title__icon" src="assets/images/header/lap.svg" alt="lap">
-                            наши четвероногие гости
-                        </h2>
-                    </div>
+                    <h2 class="clients__title  section-title">
+                        <img class="section-title__icon" src="assets/images/header/lap.svg" alt="lap">
+                        наши четвероногие гости
+                    </h2>
                     <div class="clients__inner">
                         <div class="clients__left">
-                            <div class="clients__image">
-                                <img class="clients__img" src="assets/images/clients/clients-img.jpg" alt="dog">
+
+                            <div class="swiper  carousel-clients">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="carousel-clients__image">
+                                            <img src="assets/images/clients/clients-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="carousel-clients__image">
+                                            <img src="assets/images/clients/clients-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="carousel-clients__image">
+                                            <img src="assets/images/clients/clients-img.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="carousel-clients__image">
+                                            <img src="assets/images/clients/clients-img.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="carousel-clients__image">
+                                            <img src="assets/images/clients/clients-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="clients__mini  mini-clients">
-                                <div class="mini-clients__slide active">
-                                    <svg class="mini-clients__progress" width="80" height="80">
-                                        <circle class="mini-clients__circle" cx="40" cy="40" r="36"/>
+                            
+                            <div class="thumb-wrapper">
+                                <div class="thumb-clients__prev">
+                                    <svg viewBox="0 0 36.78 20.19">
+                                        <path d="M1068.68,2280.59l13.16-13.21a4.647,4.647,0,0,1,6.58,0l13.16,13.21" transform="translate(-1066.75 -2264.5)"/>
                                     </svg>
-                                    <img class="mini-clients__img" src="assets/images/clients/clients-img.jpg" alt="">
                                 </div>
-                                <div class="mini-clients__slide">
-                                    <svg class="mini-clients__progress" width="80" height="80">
-                                        <circle class="mini-clients__circle" cx="40" cy="40" r="36"/>
+                                <div class="thumb-clients__next">
+                                    <svg viewBox="0 0 36.78 20.19">
+                                        <path d="M1068.68,2280.59l13.16-13.21a4.647,4.647,0,0,1,6.58,0l13.16,13.21" transform="translate(-1066.75 -2264.5)"/>
                                     </svg>
-                                    <img class="mini-clients__img" src="https://via.placeholder.com/65x65" alt="">
                                 </div>
-                                <div class="mini-clients__slide">
-                                    <svg class="mini-clients__progress" width="80" height="80">
-                                        <circle class="mini-clients__circle" cx="40" cy="40" r="36"/>
-                                    </svg>
-                                    <img class="mini-clients__img" src="https://via.placeholder.com/65x65" alt="">
+                                <div class="swiper  thumb-clients">
+                                    <div class="swiper-wrapper">
+                                        <div class="thumb-clients__slide  swiper-slide">
+                                            <div class="thumb-clients__item">
+                                                <img src="assets/images/clients/clients-img.jpg" alt="">
+                                                <svg class="loader-circle" width="16" height="16" viewBox="0 0 16 16">
+                                                    <circle class="path" cx="8" cy="8" r="8" fill="none" transform="rotate(-90 8 8)" stroke-opacity="1" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="thumb-clients__slide  swiper-slide">
+                                            <div class="thumb-clients__item">
+                                                <img src="assets/images/clients/clients-img.jpg" alt="">
+                                                <svg class="loader-circle" width="16" height="16" viewBox="0 0 16 16">
+                                                    <circle class="path" cx="8" cy="8" r="8" fill="none" transform="rotate(-90 8 8)" stroke-opacity="1" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="thumb-clients__slide  swiper-slide">
+                                            <div class="thumb-clients__item">
+                                                <img src="assets/images/clients/clients-img.jpg" alt="">
+                                                <svg class="loader-circle" width="16" height="16" viewBox="0 0 16 16">
+                                                    <circle class="path" cx="8" cy="8" r="8" fill="none" transform="rotate(-90 8 8)" stroke-opacity="1" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="thumb-clients__slide  swiper-slide">
+                                            <div class="thumb-clients__item">
+                                                <img src="assets/images/clients/clients-img.jpg" alt="">
+                                                <svg class="loader-circle" width="16" height="16" viewBox="0 0 16 16">
+                                                    <circle class="path" cx="8" cy="8" r="8" fill="none" transform="rotate(-90 8 8)" stroke-opacity="1" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="thumb-clients__slide  swiper-slide">
+                                            <div class="thumb-clients__item">
+                                                <img src="assets/images/clients/clients-img.jpg" alt="">
+                                                <svg class="loader-circle" width="16" height="16" viewBox="0 0 16 16">
+                                                    <circle class="path" cx="8" cy="8" r="8" fill="none" transform="rotate(-90 8 8)" stroke-opacity="1" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -429,7 +496,7 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/libs/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
