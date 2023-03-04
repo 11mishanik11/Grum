@@ -482,7 +482,7 @@ body {
 
     display: flex;
     padding-top: 180px;
-    padding-bottom: 150px;
+    padding-bottom: 180px;
 }
 
 .intro__left {
@@ -509,6 +509,7 @@ body {
 
 .intro__item {
     position: relative;
+    z-index: 1;
     margin: 0 0 30px 40px;
     
     font-size: 24px;
@@ -519,7 +520,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.intro__item :last-child {
+.intro__item:last-child {
     margin-bottom: 0;
 }
 
@@ -529,6 +530,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: -1;
     height: 5px;
 
     background-color: rgba(242, 179, 84, 0.7);
@@ -860,6 +862,25 @@ body {
 
 .diplomas__swiper {
     max-width: 850px;
+    padding-bottom: 40px;
+}
+
+.diplomas__swiper .swiper-pagination {
+    bottom: 0;
+}
+
+.diplomas__swiper .swiper-pagination-bullet {
+    width: 17px;
+    height: 17px;
+    transform: scale(.8);
+    background-color: #726f69;
+
+    transition: transform linear .2s, background-color linear .2s;
+}
+
+.diplomas__swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    transform: none;
+    background-color: #f2b354;
 }
 
 .diplomas__image {
