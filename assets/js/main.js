@@ -1,3 +1,24 @@
+const pageBody = document.querySelector('body')
+const pageHeader = document.querySelector('#header')
+
+
+// Фикс шапка
+headerFixed()
+window.onscroll = headerFixed;
+function headerFixed() {
+    let countScroll = window.scrollY;
+
+    if(countScroll > 0) {
+        if(!pageHeader.classList.contains('fixed')) { 
+            pageHeader.classList.add('fixed');
+        }
+
+    } else {
+        pageHeader.classList.remove('fixed');
+    }
+}
+
+
 // Бургер 
 (function() {
     let burgerBtn = document.querySelector('#burger-btn')
@@ -37,6 +58,8 @@
 
 
 
+
+// ============================================================
 // Превью слайдера клиентов
 const clientsThumb = new Swiper(".thumb-clients", {
 

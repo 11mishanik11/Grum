@@ -319,7 +319,6 @@ body {
     position: fixed;
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, .3);
-    padding: 15px;
 }
 
 .header__inner {
@@ -332,7 +331,7 @@ body {
 }
 
 .header.fixed .header__inner {
-    padding: 10px;
+    padding: 15px 0;
 }
 
 .header__logo {
@@ -1239,6 +1238,10 @@ body {
 
 @media(max-width:768px) {
 
+    .header__inner {
+        padding: 15px 0;
+    }
+
     /*  */
     .header__contact,
     .header__btn {
@@ -1268,7 +1271,7 @@ body {
 
     /*  */
     .intro__container {
-        padding-top: 130px;
+        padding-top: 90px;
         padding-bottom: 60px;
     }
 
@@ -1453,13 +1456,13 @@ body {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
     .intro {
-        background-image: url('../images/bg-intro-mobail.jpg');
-        background-position: bottom;
         padding-bottom: 400px;
     }
+}
 
+@media (max-width: 360px) {
 
     .thumb-clients {
         width: 200px;
