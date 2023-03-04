@@ -244,10 +244,17 @@ body {
 
 /* Заголовок секций + иконка */
 .section-title {
+    margin-bottom: 35px;
     font-size: 40px;
     font-family: Nunito;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.section-title--icon-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-title__icon {
@@ -465,8 +472,9 @@ body {
 
 /* Intro */
 .intro {
-    background-image: url('../images/bg-intro.png');
+    background-image: url('../images/bg-intro.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -475,7 +483,7 @@ body {
 
     display: flex;
     padding-top: 180px;
-    padding-bottom: 130px;
+    padding-bottom: 150px;
 }
 
 .intro__left {
@@ -533,7 +541,7 @@ body {
 
 .intro__laps {
     position: absolute;
-    left: 70%;
+    left: 76%;
     top: 20%;
 }
 
@@ -550,13 +558,6 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 70px;
-}
-
-.price__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
 }
 
 .price__filter {
@@ -658,6 +659,11 @@ body {
 .carousel-clients {
     width: 100%;
     height: 100%;
+}
+
+.carousel-clients__image {
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .carousel-clients__image img {
@@ -853,33 +859,16 @@ body {
     padding-bottom: 190px;
 }
 
-.diplomas__header {
-    margin-bottom: 35px;
-}
-
-.diplomas__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .diplomas__swiper {
     max-width: 850px;
 }
 
-.diplomas__images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.diplomas__image {
+    text-align: center;
 }
 
 .diplomas__img {
-    margin-right: 31px;
     max-width: 100%;
-}
-
-.diplomas__img:last-child {
-    margin: 0;
 }
 
 
@@ -891,7 +880,7 @@ body {
 
 /* Wiki groom */
 .wiki-groom {
-    padding: 60px 0;
+    padding: 60px 0 0;
 }
 
 .wiki-groom__inner {
@@ -899,7 +888,7 @@ body {
     justify-content: space-between;
 }
 
-.wiki-groom__mobail {
+.wiki-groom__title-mobail {
     display: none;
 }
 
@@ -918,10 +907,6 @@ body {
     align-items: flex-start;
 }
 
-.wiki-groom_title {
-    margin-bottom: 30px;
-}
-
 .wiki-groom__text {
     margin-bottom: 20px;
     font-size: 20px;
@@ -931,12 +916,6 @@ body {
 /*  Reviews */
 .reviews__header {
     margin-bottom: 35px;
-}
-
-.reviews__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .reviews__bottom {
@@ -1140,6 +1119,13 @@ body {
 
 
 @media (max-width: 992px) {
+    
+    .section-title {
+        margin-bottom: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+
     .price__box {
         margin: -15px;
     }
@@ -1166,6 +1152,10 @@ body {
     /* Intro */
     .intro__title {
         font-size: 40px;
+    }
+
+    .clients {
+        padding: 100px 0;
     }
 
 
@@ -1207,19 +1197,12 @@ body {
         align-items: center;
     }
 
-    .wiki-groom__mobail {
+    .wiki-groom__title-mobail {
         display: flex;
-        margin-bottom: 35px;
     }
 
     .wiki-groom__desktop {
         display: none;
-    }
-
-    .wiki-groom__title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .wiki-groom__image {
@@ -1255,11 +1238,6 @@ body {
 
 
 @media(max-width:768px) {
-
-    .section-title {
-        font-size: 30px;
-        text-align: center;
-    }
 
     /*  */
     .header__contact,
@@ -1313,6 +1291,12 @@ body {
     }
 
 
+    /* Clients */
+    .clients {
+        padding: 60px 0 0;
+    }
+
+
     /*  */
     .reviews__bottom {
         display: flex;
@@ -1353,6 +1337,7 @@ body {
 
 
 @media (max-width: 575px) {
+
     .burger {
         width: 52.5px;
         height: 50px;
@@ -1364,6 +1349,13 @@ body {
         margin-right: 0;
         width: 30px;
         height: 20px;
+    }
+
+
+    .intro {
+        background-image: url('../images/bg-intro-mobail.jpg');
+        background-position: bottom;
+        padding-bottom: 600px;
     }
 
 
@@ -1462,6 +1454,13 @@ body {
 }
 
 @media (max-width: 360px) {
+    .intro {
+        background-image: url('../images/bg-intro-mobail.jpg');
+        background-position: bottom;
+        padding-bottom: 400px;
+    }
+
+
     .thumb-clients {
         width: 200px;
     }
